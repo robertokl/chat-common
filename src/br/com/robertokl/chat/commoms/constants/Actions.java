@@ -7,7 +7,8 @@ public enum Actions {
     STATUS_CHANGE("statusChange"),
     PRIVATE_MESSAGE("privateMessage"),
     ERROR("error"), 
-    ADMIN_LOGIN("adminLogin");
+    ADMIN_LOGIN("adminLogin"),
+    KICK("kick");
     
     private String action;
 
@@ -19,7 +20,7 @@ public enum Actions {
 	return action;
     }
     
-    public static Actions getServerAction(String action) {
+    public static Actions findAction(String action) {
 	for (int i = 0; i < values().length; i++) {
 	    if(values()[i].getAction().equals(action)){
 		return values()[i];

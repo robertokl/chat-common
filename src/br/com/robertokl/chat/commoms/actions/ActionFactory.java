@@ -8,7 +8,7 @@ public abstract class ActionFactory {
 	data = initialize(data);
 	String action = data.split(";")[0];
 	String[] params = data.replace(action + ";", "").split(";");
-	Action a = build(Actions.getServerAction(action), params);
+	Action a = build(Actions.findAction(action), params);
 	return a;
     }
 
@@ -26,6 +26,8 @@ public abstract class ActionFactory {
 	    a = getErrorAction();
 	} else if (action == Actions.ADMIN_LOGIN) {
 	    a = getAdminLoginAction();
+	} else if (action == Actions.KICK) {
+	    a = getKickAction();
 	}
 	if (a != null)
 	    a.setParams(params);
@@ -33,7 +35,7 @@ public abstract class ActionFactory {
     }
 
     protected abstract String initialize(String data);
-    
+
     protected abstract Action getPrivateMessageAction();
 
     protected abstract Action getSendMessageAction();
@@ -43,6 +45,8 @@ public abstract class ActionFactory {
     protected abstract Action getStatusChangeAction();
 
     protected abstract Action getErrorAction();
-    
+
     protected abstract Action getAdminLoginAction();
+
+    protected abstract Action getKickAction();
 }
