@@ -22,6 +22,10 @@ public abstract class ActionFactory {
 	    a = getStatusChangeAction();
 	} else if (action == Actions.PRIVATE_MESSAGE) {
 	    a = getPrivateMessageAction();
+	} else if (action == Actions.ERROR) {
+	    a = getErrorAction();
+	} else if (action == Actions.ADMIN_LOGIN) {
+	    a = getAdminLoginAction();
 	}
 	if (a != null)
 	    a.setParams(params);
@@ -38,4 +42,7 @@ public abstract class ActionFactory {
 
     protected abstract Action getStatusChangeAction();
 
+    protected abstract Action getErrorAction();
+    
+    protected abstract Action getAdminLoginAction();
 }

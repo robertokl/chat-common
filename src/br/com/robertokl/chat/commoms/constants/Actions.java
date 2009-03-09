@@ -5,7 +5,9 @@ public enum Actions {
     CLIENT_LOGIN("clientLogin"),
     BROADCAST_MESSAGE("broadCastMessage"),
     STATUS_CHANGE("statusChange"),
-    PRIVATE_MESSAGE("privateMessage");
+    PRIVATE_MESSAGE("privateMessage"),
+    ERROR("error"), 
+    ADMIN_LOGIN("adminLogin");
     
     private String action;
 
