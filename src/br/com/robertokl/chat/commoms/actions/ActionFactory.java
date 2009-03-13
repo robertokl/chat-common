@@ -28,6 +28,10 @@ public abstract class ActionFactory {
 	    a = getAdminLoginAction();
 	} else if (action == Actions.KICK) {
 	    a = getKickAction();
+	} else if (action == Actions.MUTE) {
+	    a = getMuteAction();
+	}else if (action == Actions.UNMUTE) {
+	    a = getUnmuteAction();
 	}
 	if (a != null)
 	    a.setParams(params);
@@ -49,4 +53,8 @@ public abstract class ActionFactory {
     protected abstract Action getAdminLoginAction();
 
     protected abstract Action getKickAction();
+    
+    protected abstract Action getMuteAction();
+    
+    protected abstract Action getUnmuteAction();
 }

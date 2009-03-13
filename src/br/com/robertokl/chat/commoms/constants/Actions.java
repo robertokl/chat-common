@@ -8,7 +8,9 @@ public enum Actions {
     PRIVATE_MESSAGE("privateMessage"),
     ERROR("error"), 
     ADMIN_LOGIN("adminLogin"),
-    KICK("kick");
+    KICK("kick"), 
+    MUTE("mute"), 
+    UNMUTE("unmute");
     
     private String action;
 
