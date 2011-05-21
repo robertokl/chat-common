@@ -12,12 +12,19 @@ public enum Actions {
     MUTE("mute"), 
     UNMUTE("unmute");
     
+    /**
+	 * @uml.property  name="action"
+	 */
     private String action;
 
     private Actions(String action) {
 	this.action = action;
     }
     
+    /**
+	 * @return
+	 * @uml.property  name="action"
+	 */
     public String getAction() {
 	return action;
     }

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="teste" size="1525,700" id="" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D31302043686174202D20436F6D6D6F6D">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.1 //@children.1/@sourceConnections.2 //@children.1/@sourceConnections.3 //@children.1/@sourceConnections.4 //@children.1/@sourceConnections.5 //@children.1/@sourceConnections.6 //@children.1/@sourceConnections.7 //@children.1/@sourceConnections.8 //@children.1/@sourceConnections.9 //@children.5/@sourceConnections.2" name="Action" location="810,75" size="240,130" id="br.com.robertokl.chat.commoms.actions/Action">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,54">
+      <children xsi:type="editmodel:MethodEditModel" name="execute" id="br.com.robertokl.chat.commoms.actions/Action#execute()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setClient" id="br.com.robertokl.chat.commoms.actions/Action#setClient(Ljava.net.Socket;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setParams" id="br.com.robertokl.chat.commoms.actions/Action#setParams([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.5/@sourceConnections.1" name="ActionFactory" location="15,150" size="240,81" id="br.com.robertokl.chat.commoms.actions/ActionFactory">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="57,18">
+      <children xsi:type="editmodel:MethodEditModel" name="build" id="br.com.robertokl.chat.commoms.actions/ActionFactory#build(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@sendMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,27" id="br.com.robertokl.chat.commoms.actions/Action@sendMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="sendMessageAction" location="0,102" id="br.com.robertokl.chat.commoms.actions/Action@sendMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#sendMessageAction" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # sendMessageAction" location="678,157" size="125,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="783,184" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@kickAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,67" id="br.com.robertokl.chat.commoms.actions/Action@kickAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kickAction" location="92,130" id="br.com.robertokl.chat.commoms.actions/Action@kickAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#kickAction" multiplicityLabel="//@children.1/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # kickAction" location="909,212" size="70,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="875,212" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@adminLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,77" id="br.com.robertokl.chat.commoms.actions/Action@adminLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adminLoginAction" location="212,130" id="br.com.robertokl.chat.commoms.actions/Action@adminLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#adminLoginAction" multiplicityLabel="//@children.1/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # adminLoginAction" location="1029,212" size="113,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="995,212" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@errorAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="205,0" id="br.com.robertokl.chat.commoms.actions/Action@errorAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="errorAction" location="5,0" id="br.com.robertokl.chat.commoms.actions/Action@errorAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#errorAction" multiplicityLabel="//@children.1/@sourceConnections.3/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.3/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # errorAction" location="822,55" size="75,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="788,55" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@statusChangeAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.4/@children.2" label="//@children.1/@sourceConnections.4/@children.0" sourceEnd="//@children.1/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="215,0" id="br.com.robertokl.chat.commoms.actions/Action@statusChangeAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="statusChangeAction" location="0,2" id="br.com.robertokl.chat.commoms.actions/Action@statusChangeAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#statusChangeAction" multiplicityLabel="//@children.1/@sourceConnections.4/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.4/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # statusChangeAction" location="678,57" size="125,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="783,84" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@privateMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.5/@children.2" label="//@children.1/@sourceConnections.5/@children.0" sourceEnd="//@children.1/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="225,0" id="br.com.robertokl.chat.commoms.actions/Action@privateMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="privateMessageAction" location="0,22" id="br.com.robertokl.chat.commoms.actions/Action@privateMessageAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#privateMessageAction" multiplicityLabel="//@children.1/@sourceConnections.5/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.5/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # privateMessageAction" location="667,77" size="136,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="783,104" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@unmuteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.6/@children.2" label="//@children.1/@sourceConnections.6/@children.0" sourceEnd="//@children.1/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="235,0" id="br.com.robertokl.chat.commoms.actions/Action@unmuteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="unmuteAction" location="0,42" id="br.com.robertokl.chat.commoms.actions/Action@unmuteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#unmuteAction" multiplicityLabel="//@children.1/@sourceConnections.6/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.6/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # unmuteAction" location="712,97" size="91,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="783,124" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@muteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.7/@children.2" label="//@children.1/@sourceConnections.7/@children.0" sourceEnd="//@children.1/@sourceConnections.7/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,7" id="br.com.robertokl.chat.commoms.actions/Action@muteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="muteAction" location="0,62" id="br.com.robertokl.chat.commoms.actions/Action@muteAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#muteAction" multiplicityLabel="//@children.1/@sourceConnections.7/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.7/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # muteAction" location="726,117" size="77,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="783,144" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/Action@clientLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.8/@children.2" label="//@children.1/@sourceConnections.8/@children.0" sourceEnd="//@children.1/@sourceConnections.8/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,47" id="br.com.robertokl.chat.commoms.actions/Action@clientLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/ActionFactory#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="clientLoginAction" location="5,130" id="br.com.robertokl.chat.commoms.actions/Action@clientLoginAction+br.com.robertokl.chat.commoms.actions/ActionFactory@|br.com.robertokl.chat.commoms.actions/Action#clientLoginAction" multiplicityLabel="//@children.1/@sourceConnections.8/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.8/@children.2/@children.0" navigable="true" changeability="2">
+        <children xsi:type="editmodel:LabelEditModel" name=" # clientLoginAction" location="822,212" size="109,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="788,212" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/ActionFactory-Standard::Call->br.com.robertokl.chat.commoms.actions/Action*br.com.robertokl.chat.commoms.actions/ActionFactory-Soyatec::Import->br.com.robertokl.chat.commoms.actions/Action" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.9/@children.2" label="//@children.1/@sourceConnections.9/@children.0" sourceEnd="//@children.1/@sourceConnections.9/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="75,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="240,57" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,130"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="Actions" location="650,377" size="254,228" id="br.com.robertokl.chat.commoms.constants/Actions">
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,162">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ADMIN_LOGIN" id="br.com.robertokl.chat.commoms.constants/Actions#ADMIN_LOGIN%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ERROR" id="br.com.robertokl.chat.commoms.constants/Actions#ERROR%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="STATUS_CHANGE" id="br.com.robertokl.chat.commoms.constants/Actions#STATUS_CHANGE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="CLIENT_LOGIN" id="br.com.robertokl.chat.commoms.constants/Actions#CLIENT_LOGIN%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="MUTE" id="br.com.robertokl.chat.commoms.constants/Actions#MUTE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="UNMUTE" id="br.com.robertokl.chat.commoms.constants/Actions#UNMUTE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PRIVATE_MESSAGE" id="br.com.robertokl.chat.commoms.constants/Actions#PRIVATE_MESSAGE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="KICK" id="br.com.robertokl.chat.commoms.constants/Actions#KICK%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="BROADCAST_MESSAGE" id="br.com.robertokl.chat.commoms.constants/Actions#BROADCAST_MESSAGE%"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="Status" location="905,377" size="254,138" id="br.com.robertokl.chat.commoms.constants/Status">
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,72">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="AWAY" id="br.com.robertokl.chat.commoms.constants/Status#AWAY%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="AVAILABLE" id="br.com.robertokl.chat.commoms.constants/Status#AVAILABLE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="UNAVAILABLE" id="br.com.robertokl.chat.commoms.constants/Status#UNAVAILABLE%"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="BUSY" id="br.com.robertokl.chat.commoms.constants/Status#BUSY%"/>
+    </children>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" name="IncomingMessageHandler" location="75,405" size="248,94" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageHandler">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="68,18">
+      <children xsi:type="editmodel:MethodEditModel" name="handle" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageHandler#handle(Ljava.lang.String;Ljava.net.Socket;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IncomingMessageListener" location="360,402" size="248,99" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageListener">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="173,36">
+      <children xsi:type="editmodel:MethodEditModel" name="IncomingMessageListener" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageListener#IncomingMessageListener(Ljava.net.Socket;Lbr.com.robertokl.chat.commoms.actions.ActionFactory;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageListener#run()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.actions/ActionFactory@factory+br.com.robertokl.chat.commoms.handlers/IncomingMessageListener@" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" id="br.com.robertokl.chat.commoms.actions/ActionFactory@factory+br.com.robertokl.chat.commoms.handlers/IncomingMessageListener@|br.com.robertokl.chat.commoms.handlers/IncomingMessageListener#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="factory" location="240,71" id="br.com.robertokl.chat.commoms.actions/ActionFactory@factory+br.com.robertokl.chat.commoms.handlers/IncomingMessageListener@|br.com.robertokl.chat.commoms.actions/ActionFactory#factory" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - factory" location="262,201" size="48,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="262,228" size="7,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageListener-Standard::Call->br.com.robertokl.chat.commoms.actions/ActionFactory*br.com.robertokl.chat.commoms.handlers/IncomingMessageListener-Soyatec::Import->br.com.robertokl.chat.commoms.actions/ActionFactory" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="75,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,12" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="225,81"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="br.com.robertokl.chat.commoms.handlers/IncomingMessageListener-Standard::Call->br.com.robertokl.chat.commoms.actions/Action*br.com.robertokl.chat.commoms.handlers/IncomingMessageListener-Soyatec::Import->br.com.robertokl.chat.commoms.actions/Action" source="//@children.5" target="//@children.0" targetEnd="//@children.5/@sourceConnections.2/@children.2" label="//@children.5/@sourceConnections.2/@children.0" sourceEnd="//@children.5/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="75,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="194,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="27,130"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

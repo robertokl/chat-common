@@ -2,6 +2,9 @@ package br.com.robertokl.chat.commoms.actions;
 
 import br.com.robertokl.chat.commoms.constants.Actions;
 
+/**
+ * @author     klein
+ */
 public abstract class ActionFactory {
 
     public Action build(String data) {
@@ -40,21 +43,57 @@ public abstract class ActionFactory {
 
     protected abstract String initialize(String data);
 
+    /**
+	 * @uml.property  name="privateMessageAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getPrivateMessageAction();
 
+    /**
+	 * @uml.property  name="sendMessageAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getSendMessageAction();
 
+    /**
+	 * @uml.property  name="clientLoginAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getClientLoginAction();
 
+    /**
+	 * @uml.property  name="statusChangeAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getStatusChangeAction();
 
+    /**
+	 * @uml.property  name="errorAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getErrorAction();
 
+    /**
+	 * @uml.property  name="adminLoginAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getAdminLoginAction();
 
+    /**
+	 * @uml.property  name="kickAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getKickAction();
     
+    /**
+	 * @uml.property  name="muteAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getMuteAction();
     
+    /**
+	 * @uml.property  name="unmuteAction"
+	 * @uml.associationEnd  readOnly="true"
+	 */
     protected abstract Action getUnmuteAction();
 }

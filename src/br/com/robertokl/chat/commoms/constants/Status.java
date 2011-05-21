@@ -1,21 +1,32 @@
 package br.com.robertokl.chat.commoms.constants;
 
 public enum Status {
-    AVAILABLE("Disponível"),
-    UNAVAILABLE("Indisponível"),
+    AVAILABLE("DisponÃ­vel"),
+    UNAVAILABLE("IndisponÃ­vel"),
     AWAY("Ausente"),
     BUSY("Ocupado");
 
+    /**
+	 * @uml.property  name="status"
+	 */
     private String status;
     
     private Status(String status) {
 	this.status = status;
     }
 
+    /**
+	 * @param  status
+	 * @uml.property  name="status"
+	 */
     public void setStatus(String status) {
 	this.status = status;
     }
 
+    /**
+	 * @return
+	 * @uml.property  name="status"
+	 */
     public String getStatus() {
 	return status;
     }
