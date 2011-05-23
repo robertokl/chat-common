@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="com.soyatec.uml.CONTAINER"/>
-	<classpathentry kind="lib" path="/home/klein/Desktop/jasypt-1.7.1.jar"/>
-	<classpathentry kind="lib" path="/home/klein/Desktop/icu4j-3.4.4.jar"/>
+	<classpathentry kind="lib" path="/home/klein/Documents/java/chat/chat-common/jasypt-1.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/klein/Documents/java/chat/chat-common/icu4j-3.4.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
